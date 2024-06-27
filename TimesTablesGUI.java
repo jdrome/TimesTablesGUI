@@ -17,5 +17,6 @@ public class TimesTablesGUI extends JFrame {
 
     public TimesTablesGUI() {
         setTitle("Times Tables Practice");
+        setSize(400, 300);
     }
 }
