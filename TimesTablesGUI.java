@@ -14,4 +14,8 @@ public class TimesTablesGUI extends JFrame {
     private int[][] questions;
     private int currentQuestionIndex;
     private String name;
+
+    public TimesTablesGUI() {
+        setTitle("Times Tables Practice");
+    }
 }
