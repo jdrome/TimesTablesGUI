@@ -22,5 +22,8 @@ public class TimesTablesGUI extends JFrame {
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(8, 1));
+
+        instructionLabel = new JLabel("Enter your name and click start:");
+        add(instructionLabel);
     }
 }
