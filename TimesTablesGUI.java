@@ -23,7 +23,12 @@ public class TimesTablesGUI extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(8, 1));
 
+        // Provides instructions to user
         instructionLabel = new JLabel("Enter your name and click start:");
         add(instructionLabel);
+
+        // Provide text field for user to add their name.
+        nameField = new JTextField();
+        add(nameField);
     }
 }
