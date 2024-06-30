@@ -4,6 +4,8 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.Random;
 
+
+// Creates Frame for GUI
 public class TimesTablesGUI extends JFrame {
     private JTextField nameField;
     private JButton startButton, submitButton, resetButton;
@@ -19,5 +21,6 @@ public class TimesTablesGUI extends JFrame {
         setTitle("Times Tables Practice");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new GridLayout(8, 1));
     }
 }
