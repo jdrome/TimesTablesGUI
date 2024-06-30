@@ -7,15 +7,15 @@ import java.util.Random;
 
 // Creates Frame for GUI
 public class TimesTablesGUI extends JFrame {
-    private JTextField nameField;
-    private JButton startButton, submitButton, resetButton;
-    private JLabel instructionLabel, questionLabel, resultLabel;
-    private JTextField answerField;
-    private int correctCount;
-    private ArrayList<Integer> wrongList;
-    private int[][] questions;
-    private int currentQuestionIndex;
-    private String name;
+    JTextField nameField;
+    JButton startButton, submitButton, resetButton;
+    JLabel instructionLabel, questionLabel, resultLabel;
+    JTextField answerField;
+    int correctCount;
+    ArrayList<Integer> wrongList;
+    int[][] questions;
+    int currentQuestionIndex;
+    String name;
 
     public TimesTablesGUI() {
         setTitle("Times Tables Practice");
@@ -30,5 +30,10 @@ public class TimesTablesGUI extends JFrame {
         // Provide text field for user to add their name.
         nameField = new JTextField();
         add(nameField);
+
+        // Start button will initiate times tables program
+        startButton = new JButton("Start");
+        add(startButton);
+        startButton.addActionListener(new StartButton(this));
     }
 }
