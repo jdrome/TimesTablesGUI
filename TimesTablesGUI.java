@@ -74,6 +74,12 @@ public class TimesTablesGUI extends JFrame {
         answerField.setEnabled(false);
         submitButton.setEnabled(false);
     }
+
+    void showNextQuestion() {
+        int[] question = questions[currentQuestionIndex];
+        questionLabel.setText((currentQuestionIndex + 1) + ". " + question[0] + " X " + question[1] + " = ");
+        answerField.setText("");
+    }
 }
 // ALERT:
 // Note to future me, the StartButton class is erroring because we put methods in it that we have not built yet. We still need to build those methods into the TimesTablesGUI class.
