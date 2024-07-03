@@ -35,5 +35,11 @@ public class TimesTablesGUI extends JFrame {
         startButton = new JButton("Start");
         add(startButton);
         startButton.addActionListener(new StartButton(this));
+
+        // Question label to hold question for the user
+        questionLabel = new JLabel();
+        add(questionLabel);
     }
 }
+// ALERT:
+// Note to future me, the StartButton class is erroring because we put methods in it that we have not built yet. We still need to build those methods into the TimesTablesGUI class.
