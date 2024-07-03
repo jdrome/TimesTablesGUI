@@ -48,6 +48,11 @@ public class TimesTablesGUI extends JFrame {
         submitButton = new JButton("Submit");
         add(submitButton);
         submitButton.addActionListener(new SubmitButton(this));
+
+        // Reset button for user to reset the game
+        resetButton = new JButton("Reset");
+        add(resetButton);
+        resetButton.addActionListener(new ResetButton(this));
     }
 }
 // ALERT:
