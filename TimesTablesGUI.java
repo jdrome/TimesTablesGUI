@@ -75,10 +75,23 @@ public class TimesTablesGUI extends JFrame {
         submitButton.setEnabled(false);
     }
 
+    // Generates the next question for the user
     void showNextQuestion() {
         int[] question = questions[currentQuestionIndex];
         questionLabel.setText((currentQuestionIndex + 1) + ". " + question[0] + " X " + question[1] + " = ");
         answerField.setText("");
+    }
+
+    // Displays the users results
+    void showResults() {
+        StringBuilder results = new StringBuilder();
+        results.append("You got ").append(correctCount).append(" correct out of 5.");
+        if (!wrongList.isEmpty()) {
+            results.append(" You got the following questions incorrect: ").append(wrongList);
+        } else {
+            results.append(" Congratulations, you got 100%!");
+        }
+        resultLabel.setText(results.toString());
     }
 }
 // ALERT:
