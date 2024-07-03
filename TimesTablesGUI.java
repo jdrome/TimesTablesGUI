@@ -43,6 +43,11 @@ public class TimesTablesGUI extends JFrame {
         // Answer field where user can type answer to question
         answerField = new JTextField();
         add(answerField);
+
+        // Submit button for user to submit their answer(s)
+        submitButton = new JButton("Submit");
+        add(submitButton);
+        submitButton.addActionListener(new SubmitButton(this));
     }
 }
 // ALERT:
