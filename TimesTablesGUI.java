@@ -39,6 +39,10 @@ public class TimesTablesGUI extends JFrame {
         // Question label to hold question for the user
         questionLabel = new JLabel();
         add(questionLabel);
+
+        // Answer field where user can type answer to question
+        answerField = new JTextField();
+        add(answerField);
     }
 }
 // ALERT:
