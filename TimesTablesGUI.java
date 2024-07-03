@@ -53,6 +53,26 @@ public class TimesTablesGUI extends JFrame {
         resetButton = new JButton("Reset");
         add(resetButton);
         resetButton.addActionListener(new ResetButton(this));
+
+        // Result label to show the user their results
+        resultLabel = new JLabel();
+        add(resultLabel);
+
+        disableQuestionSection();
+    }
+
+    // Enables the question for the user
+    void enableQuestionSection() {
+        questionLabel.setEnabled(true);
+        answerField.setEnabled(true);
+        submitButton.setEnabled(true);
+    }
+
+    // Disables the questions for the user
+    void disableQuestionSection() {
+        questionLabel.setEnabled(false);
+        answerField.setEnabled(false);
+        submitButton.setEnabled(false);
     }
 }
 // ALERT:
