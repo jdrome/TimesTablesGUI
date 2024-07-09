@@ -93,6 +93,19 @@ public class TimesTablesGUI extends JFrame {
         }
         resultLabel.setText(results.toString());
     }
+
+    int[][] generateQuestions() {
+        int[][] questions = new int[5][3];
+        Random rand = new Random();
+        for (int i = 0; i < 5; i++) {
+            int num1 = 1 + rand.nextInt(12);
+            int num2 = 1 + rand.nextInt(12);
+            questions[i][0] = num1;
+            questions[i][1] = num2;
+            questions[i][2] = num1 * num2;
+        }
+        return questions;
+    }
 }
 // ALERT:
 // Note to future me, the StartButton class is erroring because we put methods in it that we have not built yet. We still need to build those methods into the TimesTablesGUI class.
