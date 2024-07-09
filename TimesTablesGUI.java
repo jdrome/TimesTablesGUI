@@ -93,6 +93,7 @@ public class TimesTablesGUI extends JFrame {
         resultLabel.setText(results.toString());
     }
 
+    // Generates random multiplication questions for the user
     int[][] generateQuestions() {
         int[][] questions = new int[5][3];
         Random rand = new Random();
