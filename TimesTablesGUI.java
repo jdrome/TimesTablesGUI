@@ -107,5 +107,3 @@ public class TimesTablesGUI extends JFrame {
         return questions;
     }
 }
-// ALERT:
-// Note to future me, the StartButton class is erroring because we put methods in it that we have not built yet. We still need to build those methods into the TimesTablesGUI class.
